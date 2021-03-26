@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="login" class="animate-form">
+
+            <form class="datainput" action="/login" method="POST">
+
+                <h1>Login</h1>
+
+
+                <label for='uname'> Your username </label>
+                <input class="name-inpt" id='uname' type="text" name="username" maxlength="20" required />
+
+                <label for='urpass'> Your password </label>
+                <input class="pass-inpt" id='urpass' type="password" name="password" maxlength="25" required />
+
+                <!-- <div class="loginkeeping">
+                        <input type="checkbox" name="loginkeeping" value="loginkeeping" />
+                        <label> Keep me logged in</label>
+                    </div> -->
+
+                <button class="submit-login" type="submit">Submit </button>
+
+
+            </form>
+
+            <!-- <div class="keeplogin">
+                    <input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" />
+                    <label> Keep me logged in</label>
+
+                </div> -->
+
+
+            <form class="popup" id="pid" action="/register" method="POST">
+
+                <h1><b> Registration</b></h1>
+                <label for="forinpt" class="pop-inpt"> Your username </label>
+                <input class="inpt" id='forinpt' type="text" placeholder="username" name="username" maxlength="20"
+                    required /> <br />
+
+
+                <label for='forpass'> Your password </label>
+                <input placeholder="password" id='forpass' name="password" type="password" maxlength="25"
+                    required /><br />
+
+                <label class="inpt" for="formail"> Your email </label>
+                <input class="inpt" id='formail' type="email" placeholder="email" name="email" maxlength="30"
+                    required /><br />
+
+                <button class="submit-reg" type="submit">Submit </button>
+
+            </form>
+
+            <!-- <form class="reg_fin" id="rid" action="/regfin" method="POST">
+    
+                    <h1><b> Registration completed successfully , click outside to continue..</b></h1>
+    
+    
+                 </form> -->
+            <div>
+                <button class='nry'> Not registered yet ? </button>
+                
+            </div>
+
+            <div class="wws_div">
+                <img class="wws" src='imgaa.png'>
+            </div>
+        </div>
+        <script src="./index.js"></script>
+</body>
+
+</html>
