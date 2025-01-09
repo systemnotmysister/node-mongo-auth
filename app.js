@@ -21,7 +21,6 @@ mongoose
     process.exit(1); 
   });
 
-// Подключаем маршруты
 app.use('/', userRoutes);
 
 app.listen(port, () => {
