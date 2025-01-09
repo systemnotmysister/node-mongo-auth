@@ -8,7 +8,7 @@ const wws_div = document.querySelector('.wws_div')
 
 
 
-document.addEventListener("click", function (e) {  // условие открытие попапа
+document.addEventListener("click", function (e) { 
   popup.classList.add('active')
   animate_form.classList.add('animate_dark')
   nry.classList.add('button_remove')
@@ -20,7 +20,7 @@ document.addEventListener("click", function (e) {  // условие откры�
 
 
 document.addEventListener("click", function (e) {
-  if (e.target !== popup && !popup.contains(e.target) && e.target !== nry) {  // условие закрытия попапа
+  if (e.target !== popup && !popup.contains(e.target) && e.target !== nry) {
     popup.classList.remove("active");
     animate_form.classList.remove('animate_dark')
     nry.classList.remove('button_remove')
@@ -30,19 +30,3 @@ document.addEventListener("click", function (e) {
   
 })
 
-
-
-
-// export  function displayBlock() {
-//  document.getElementById('pid').style.display='block'
-// }
-
-
-// export  function colorChange() {
-// document.getElementById('login').style.background='#c5c5c5'
-// }
-
-
-// export  function displayNone() {
-//   onclick=document.getElementById('pid').style.display='none'
-//   }
